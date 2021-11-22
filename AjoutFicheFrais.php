@@ -17,7 +17,7 @@ if (isset($_SESSION['connexion_id'])) :
     </head>
 
     <body>
-        <h1>Bienvenue sur l'interface d'ajout de fiches de frais</h1>
+        <h1>Ajout de fiches de frais</h1>
 
         <h3><i>Renseigner les champs suivants et cliquez sur "Ajouter"</i></h3>
 
@@ -34,12 +34,14 @@ if (isset($_SESSION['connexion_id'])) :
 
             </form>
             <div class="titre_saisie_frais">Saisie de vos frais ..</div>
-            <center><form action="#">
-                <label>Frais de déplacements :</label> <input type="text" name="valeur_01" id="valeur_01" onchange="calculateSOMME()" value="0"><br/><br/>
-                <label>Frais d'hôtellerie :</label> <input type="text" name="valeur_02" id="valeur_02" onchange="calculateSOMME()" value="0"><br/><br/>
-                <label>Frais de restauration :</label> <input type="text" name="valeur_03" id="valeur_03" onchange="calculateSOMME()" value="0"><br/><br/>
-                <label>Total :</label> <input type="text" name="valeur_somme" id="valeur_somme" style="color:red;">
-            </form></center>
+            <center>
+                <form action="#">
+                    <label>Frais de déplacements :</label> <input type="text" name="valeur_01" id="valeur_01" onchange="calculateSOMME()" value="0"><br /><br />
+                    <label>Frais d'hôtellerie :</label> <input type="text" name="valeur_02" id="valeur_02" onchange="calculateSOMME()" value="0"><br /><br />
+                    <label>Frais de restauration :</label> <input type="text" name="valeur_03" id="valeur_03" onchange="calculateSOMME()" value="0"><br /><br />
+                    <label>Total :</label> <input type="text" name="valeur_somme" id="valeur_somme" style="color:red;">
+                </form>
+            </center>
             <script type=text/javascript>
                 function calculateSOMME() {
                     var element1 = document.getElementById('valeur_01');
