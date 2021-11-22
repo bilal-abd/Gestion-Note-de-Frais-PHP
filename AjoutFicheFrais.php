@@ -31,20 +31,26 @@ if (isset($_SESSION['connexion_id'])) :
                 </center>
             </div>
             <form method="POST" action="calcul.php">
-                
+
             </form>
             <div class="titre_saisie_frais">Saisie de vos frais ..</div>
-            <label class="frais_restauration">Frais de déplacement annexes : <input type="number" name="deplacements" class="input_frais" placeholder="en €"></label><br><br>
-            <label class="frais_hotellerie">Frais de hôtellerie : <input type="number" name="hotellerie" class="input_frais" placeholder="en €"></label><br><br>
-            <label class="frais_deplacement">Frais de restauration : <input type="number" name="restauration" class="input_frais" placeholder="en €"></label><br>
-            <?php
-                $total = 0;
-                    $deplacements = $_POST['deplacements'];
-                    $hotellerie = $_POST['hottellerie'];
-                    $restauration = $_POST['restauration'];
-                    echo "$deplacements + $hotellerie + $restauration = $total";
-            ?>
-            <label>Total :</label><input type = $total>
+            <center><form action="#">
+                <label>Frais de déplacements :</label> <input type="text" name="valeur_01" id="valeur_01" onchange="calculateSOMME()" value="0"><br/><br/>
+                <label>Frais d'hôtellerie :</label> <input type="text" name="valeur_02" id="valeur_02" onchange="calculateSOMME()" value="0"><br/><br/>
+                <label>Frais de restauration :</label> <input type="text" name="valeur_03" id="valeur_03" onchange="calculateSOMME()" value="0"><br/><br/>
+                <label>Total :</label> <input type="text" name="valeur_somme" id="valeur_somme" style="color:red;">
+            </form></center>
+            <script type=text/javascript>
+                function calculateSOMME() {
+                    var element1 = document.getElementById('valeur_01');
+                    var element2 = document.getElementById('valeur_02');
+                    var element3 = document.getElementById('valeur_03');
+                    var somme_frais = document.getElementById('valeur_somme');
+                    total = parseFloat(element1.value) + parseFloat(element2.value) + parseFloat(element3.value);
+                    somme_frais.value = total;
+                }
+            </script>
+
             <input type="submit" action="AjoutFicheFrais.php" name="Calculer" value="Calculer" class="btn_ajouter">
         </div>
     </body>
