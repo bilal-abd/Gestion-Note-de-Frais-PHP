@@ -1,0 +1,90 @@
+body{
+    background-color: lightgrey;
+}
+
+#Fiche{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border:ridge 10px blue;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.titre_fiche, .icone_GSB{
+    display: inline-block;
+    vertical-align: middle;
+}
+.titre_fiche{
+    text-align: left;
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-family: 'Times News Roman', serif;
+    font-style: italic;
+}
+.icone_GSB{
+    height: 75px;
+    width: 100px;
+}
+
+.titre_identité_visiteur, .nom_visiteur{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.titre_identité_visiteur{
+    text-decoration: underline;
+    font-style: italic;
+    margin-right: 500px;
+}
+.titre_fonction_visiteur, .fonction_visiteur{
+    display: inline-block;
+    margin-bottom: 100px;
+}
+.titre_fonction_visiteur{
+    text-decoration: underline;
+    font-style: italic;
+    margin-right: 570px;
+}
+
+table{
+    margin-right: auto;
+    margin-left: auto;
+}
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+td {
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #eee;
+}
+th[scope="col"] {
+    background-color: #696969;
+    color: #fff;
+}
+th[scope="row"] {
+    background-color: #d7d9f2;
+}
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+}
+
+.btn_deconnexion{
+    text-align: center;
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
