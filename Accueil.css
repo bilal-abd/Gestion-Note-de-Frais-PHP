@@ -1,140 +1,47 @@
-header{
-	height: 260px;
-	border: solid 3px black;
-	background-image: url(Header.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.img_header, .titre{
-	display: inline-block;
-}
-.img_header{
-	height: 250px;
-	width: 440px;
-	margin-left: 50px;
-	margin-right: 300px;
-}
-.titre{
-	font-size: 50px;
-	font-weight: bold;
-	font-style: italic;
+body{
+    background-image: url(WallpaperAccueil.jpg);
 }
 
-/*INTERFACE DE CONNEXION*/
-.titre_choix{
-	text-align: center;
-	margin-top: 25px;
-	font-style: italic;
-}
-
-.openModal{
-	text-decoration: none;
-	border: solid 3px navy;
-	border-radius: 15px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 75px;
-	padding-left: 75px;
-	font-size: 20px;
-	font-weight: bold;
-}
-.modal_title{
-	text-align: center;
-	margin-bottom: 50px;
-}
-.modalDialog {
-    position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 99999;
-    opacity:0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
-}
-.modalDialog:target {
-    opacity:1;
-    pointer-events: auto;
-}
-.modalDialog > div {
-    width: 750px;
-    position: relative;
-    margin: 10% auto;
-    padding: 5px 20px 13px 20px;
-    border-radius: 10px;
-    background: #fff;
-    background: -moz-linear-gradient(#fff, #999);
-    background: -webkit-linear-gradient(#fff, #999);
-    background: -o-linear-gradient(#fff, #999);
-}
-.close {
-    background: #606061;
-    color: #FFFFFF;
-    line-height: 25px;
-    position: absolute;
-    right: -12px;
+/*TITRE*/
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+p {
     text-align: center;
-    top: -10px;
-    width: 24px;
-    text-decoration: none;
+    border-right: solid 5px rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Source Code Pro', monospace;  
+    font-size: 50px;
     font-weight: bold;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    -moz-box-shadow: 1px 1px 3px #000;
-    -webkit-box-shadow: 1px 1px 3px #000;
-    box-shadow: 1px 1px 3px #000;
+    color: white;
+    margin-bottom: 500px;
 }
-.close:hover {
-    background: #00d9ff;
+p {
+    animation: animated-text 4s linear 1 normal both,
+    animated-cursor 600ms linear infinite;
 }
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 975px;}
+}
+@keyframes animated-cursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+}
+/**TITRE**/
 
-span{
-	position: relative;
-	display: inline-flex;
-	width: 180px;
-	height: 55px;
-	margin: 0 15px;
-	perspective: 1000px;
-	margin-top: 50px;
-  }
-  span a{
-	font-size: 19px;
-	letter-spacing: 1px;
-	transform-style: preserve-3d;
-	transform: translateZ(-25px);
-	transition: transform .25s;
-	font-family: 'Montserrat', sans-serif;
-	
-  }
-  span a:before,
-  span a:after{
-	position: absolute;
-	content: "Me connecter";
-	height: 55px;
-	width: 180px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 5px solid black;
-	box-sizing: border-box;
-	border-radius: 5px;
-  }
-  span a:before{
-	color: #fff;
-	background: #000;
-	transform: rotateY(0deg) translateZ(25px);
-  }
-  span a:after{
-	color: #000;
-	transform: rotateX(90deg) translateZ(25px);
-  }
-  span a:hover{
-	transform: translateZ(-25px) rotateX(-90deg);
-  }
-/**INTERFACE DE CONNEXION**/
+.lien_GSB{
+    text-decoration: none;
+    font-size: 35px;
+    color: black;
+    background-color: lightblue;
+    border: solid 3px navy;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 125px;
+    padding-left: 125px;
+    border-radius: 15px;
+}
+.lien_GSB:hover{
+    background-color: navy;
+    color: white;
+}
