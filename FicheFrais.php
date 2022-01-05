@@ -1,7 +1,7 @@
 <?php
 //Ouverture de la session utilisateur//
 session_start();
-if (isset($_SESSION['connexion'])) :
+    if (isset($_SESSION['connexion'])) :
 ?>
 
     <!DOCTYPE html>
@@ -12,6 +12,7 @@ if (isset($_SESSION['connexion'])) :
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/afdb0ebcde.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" sizes="16x16" href="Frais.png">
         <link rel="stylesheet" type="text/css" href="FicheFrais.css">
         <title>Ajouter une fiche de frais</title>
     </head>

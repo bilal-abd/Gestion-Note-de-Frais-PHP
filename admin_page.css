@@ -1,0 +1,101 @@
+body{
+    background-color: lightblue;
+}
+
+.message_bienvenue{
+    font-size: 35px;
+}
+.accès_fiche{
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.container{
+    width: 1250px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.container .card{
+    position: relative;
+    cursor: pointer;
+}
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+.container .card .face.face1{
+    position: relative;
+    background: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+.container .card:hover .face.face1{
+    background: grey;
+    transform: translateY(0);
+}
+.container .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+.container .card .face.face1 .content img{
+    max-width: 100px;
+}
+.container .card .face.face1 .content h3{
+    color: #000080;
+    text-align: center;
+    font-size: 1.5em;
+}
+.container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+.container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+.container .card .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+}
+
+.btn_deconnexion{
+    float: right;
+    margin-right: 50px;
+    margin-top: 100px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    border: solid 3px red;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: red;
+    color: white;
+}
+.btn_deconnexion:hover{
+    background-color: lightgrey;
+    color: black;
+}

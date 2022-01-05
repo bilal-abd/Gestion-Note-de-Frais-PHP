@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Accueil.css">
     <script src="https://kit.fontawesome.com/afdb0ebcde.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="Accueil.png">
     <title>Accueil GSB</title>
 </head>
 <body><center>
 
-    <p>Bienvenue chez les laboratoires GSB</p>
+    <img src="GSB.png" height="150" whidth="175" class="img_titre"> <p class="titre">Bienvenue chez les laboratoires GSB</p><img src="GSB.png" height="150" whidth="125" class="img_titre">
     <center>
-        <a href="login_connexion.php" class="lien_GSB"><i class="fas fa-euro-sign"></i><i class="fas fa-euro-sign"></i><i class="fas fa-euro-sign"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accéder à l'interface de gestion GSB &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-euro-sign"></i><i class="fas fa-euro-sign"></i><i class="fas fa-euro-sign"></i></a>
+        <a href="login2.php" class="lien_GSB" target="_self"><i class="fas fa-euro-sign"></i><i class="fas fa-euro-sign"></i><i class="fas fa-euro-sign"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accéder à l'interface de gestion des frais GSB &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-euro-sign"></i><i class="fas fa-euro-sign"></i><i class="fas fa-euro-sign"></i></a>
     </center>
     
 </center></body>
