@@ -11,9 +11,9 @@
 </head>
 <body><center>
 
-    <img src="GSB.png" height="150" whidth="175" class="img_titre"> <p class="titre">Bienvenue chez les laboratoires GSB</p><img src="GSB.png" height="150" whidth="125" class="img_titre">
+    <p><img src="GSB.png" height="75" whidth="100"> Bienvenue chez les laboratoires GSB <img src="GSB.png" height="75" whidth="100"></p>
     <center>
-        <a href="login2.php" class="lien_GSB" target="_self"><i class="fas fa-euro-sign"></i><i class="fas fa-euro-sign"></i><i class="fas fa-euro-sign"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accéder à l'interface de gestion des frais GSB &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-euro-sign"></i><i class="fas fa-euro-sign"></i><i class="fas fa-euro-sign"></i></a>
+        <a href="login.php" class="lien_GSB"><i class="fas fa-euro-sign"></i><i class="fas fa-euro-sign"></i><i class="fas fa-euro-sign"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accéder à l'interface de connexion GSB &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-euro-sign"></i><i class="fas fa-euro-sign"></i><i class="fas fa-euro-sign"></i></a>
     </center>
     
 </center></body>

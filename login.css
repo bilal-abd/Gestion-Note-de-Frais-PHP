@@ -42,8 +42,7 @@ header{
     margin-bottom: 50px;
 }
 .btn_connexion{
-    background: radial-gradient(navy, lightblue);
-    margin-top: 50px;
+    background: radial-gradient(black, grey);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 50px;
@@ -52,7 +51,4 @@ header{
     color: white;
     font-size: 15px;
     font-weight: bold;
-}
-.btn_connexion:hover{
-    cursor: pointer;
 }

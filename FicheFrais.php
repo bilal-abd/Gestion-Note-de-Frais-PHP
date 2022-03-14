@@ -1,9 +1,7 @@
-<?php
-//Ouverture de la session utilisateur//
-session_start();
-    if (isset($_SESSION['connexion'])) :
-?>
-
+<?php 
+   session_start();
+   include "Logintest/db_conn.php";
+   if (isset($_SESSION['username']) && isset($_SESSION['id'])) {   ?>
     <!DOCTYPE html>
     <html lang="fr">
 
@@ -22,58 +20,54 @@ session_start();
         <img src="HeaderFF.png" width="100%">
 
         <div style="width: 94%" id="Fiche">
-            <div class="titre_fiche">Fiche de frais &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="GSB.png" class="icone_GSB"></div>
-            <div class="titre_identité_visiteur">Identité du visisteur :</div>
-            <div class="nom_visiteur">Nom du visiteur</div><br>
-            <div class="titre_fonction_visiteur">Fonction:</div>
-            <div class="fonction_visiteur">fonction visiteur</div>
 
+            <div class="titre_fiche">Fiche de frais &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="GSB.png" class="icone_GSB"></div>
+            <form action="insertion.php" method="POST">
+            <center>Nom&nbsp;&nbsp;:&nbsp;&nbsp;<input type="text" name="nom" placeholder="Entrez votre nom"><br></center>
+            
+
+            <center><i class="intro">Saisissez les différents frais engagés</i></center><br><br>
+            
             <table>
                 <tr>
                     <th scope="col">Type de prestation</th>
                     <th scope="col">Saisie</th>
-                    <th scope="col">Total</th>
+                    
                 </tr>
                 <tr>
                     <th scope="row"><label>Frais de déplacements</label></th>
-                    <td><input type="text" name="valeur_01" id="valeur_01" onchange="calculateSOMME()" value="0"></td>
+                    <td><input type="number" name="deplacement" ></td>
                 </tr>
                 <tr>
                     <th scope="row"><label>Frais d'hôtellerie</label></th>
-                    <td><input type="text" name="valeur_02" id="valeur_02" onchange="calculateSOMME()" value="0"></td>
+                    <td><input type="number" name="hotel" ></td>
                 </tr>
                 <tr>
                     <th scope="row"><label>Frais de restauration :</label></th>
-                    <td><input type="text" name="valeur_03" id="valeur_03" onchange="calculateSOMME()" value="0"></td>
+                    <td><input type="number" name="restauration" ></td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" name="valeur_somme" id="valeur_somme" style="color:red;"></td>
-                </tr>
+                <input type="submit" value="Envoyer" >
+                </form>
+        
             </table>
-        </div>
-        <script type=text/javascript>
-            function calculateSOMME() {
-                var element1 = document.getElementById('valeur_01');
-                var element2 = document.getElementById('valeur_02');
-                var element3 = document.getElementById('valeur_03');
-                var somme_frais = document.getElementById('valeur_somme');
-                total = parseFloat(element1.value) + parseFloat(element2.value) + parseFloat(element3.value);
-                somme_frais.value = total;
-            }
-        </script>
+            </div>
+            
+        
 
         </div>
     </body>
 
     </html>
 
-<?php
-endif;
-if (!isset($_SESSION['Connexion_utilisateur'])) {
-    echo '<a href="login.php" class="btn_deconnexion">Revenir à la page de connexion</a>';
-} else {
-    echo "<a href='logout.php'>Déconnexion</a>";
-}
-?>
+
+<a href="Logintest/logout.php">Deconnexion</a>
+
+    
+
+
+
+
+
+    <?php }else{
+	header("Location: index.php");
+} ?>

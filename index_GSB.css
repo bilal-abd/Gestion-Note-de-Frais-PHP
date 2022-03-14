@@ -4,8 +4,7 @@ body{
 
 /*TITRE*/
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
-p {
-    text-align: center;
+.titre {
     border-right: solid 5px rgba(255,255,255,.75);
     white-space: nowrap;
     overflow: hidden;
@@ -13,19 +12,24 @@ p {
     font-size: 50px;
     font-weight: bold;
     color: white;
-    margin-bottom: 500px;
+    background-color: lightblue;
+    border-radius: 15px;
+    margin-bottom: 250px;
 }
-p {
+.titre {
     animation: animated-text 4s linear 1 normal both,
     animated-cursor 600ms linear infinite;
 }
 @keyframes animated-text{
     from{width: 0;}
-    to{width: 1250px;}
+    to{width: 1000px;}
 }
-@keyframes animated-cursor{
-    from{border-right-color: rgba(255,255,255,.75);}
-    to{border-right-color: transparent;}
+.titre, .img_titre{
+    display: inline-block;
+    vertical-align: middle;
+}
+.img_titre{
+    margin-bottom: 225px;
 }
 /**TITRE**/
 

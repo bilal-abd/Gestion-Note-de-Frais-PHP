@@ -10,7 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="Commercial.png">
     <script src="https://kit.fontawesome.com/afdb0ebcde.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="user_page.css">
+    <link rel="stylesheet" type="text/css" href="page_visiteur_GSB.css">
     <title>Connexion</title>
 </head>
 <body>
@@ -38,7 +38,7 @@ session_start();
     </div>
     <center><a href='FicheFrais.php' class="accès_fiche">Bienvenue sur la page de renseignements des frais</a></center>
     <p style="margin-bottom: 250px"></p>
-    <a href='logout.php' class="btn_deconnexion">Déconnexion</a>
+    <a href='logout_GDB.php' class="btn_deconnexion">Déconnexion</a>
     </center>
 
     <?php 

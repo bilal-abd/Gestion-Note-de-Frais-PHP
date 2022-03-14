@@ -1,5 +1,6 @@
 body{
-    background-color: lightgrey;
+    background-color: rgba(0, 0, 0, 0.37);
+  
 }
 
 #Fiche{
@@ -10,7 +11,7 @@ body{
     padding-top: 25px;
     padding-left: 25px;
     padding-bottom: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 17.5px;
 }
 
 .titre_fiche, .icone_GSB{
@@ -21,31 +22,19 @@ body{
     text-align: left;
     font-size: 50px;
     margin-bottom: 50px;
-    font-family: 'Times News Roman', serif;
-    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+  
 }
 .icone_GSB{
     height: 75px;
     width: 100px;
 }
 
-.titre_identité_visiteur, .nom_visiteur{
-    display: inline-block;
-    margin-bottom: 15px;
-}
-.titre_identité_visiteur{
-    text-decoration: underline;
-    font-style: italic;
-    margin-right: 500px;
-}
-.titre_fonction_visiteur, .fonction_visiteur{
-    display: inline-block;
-    margin-bottom: 100px;
-}
-.titre_fonction_visiteur{
-    text-decoration: underline;
-    font-style: italic;
-    margin-right: 570px;
+
+
+.intro{
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 table{
@@ -83,8 +72,21 @@ table {
 }
 
 .btn_deconnexion{
-    text-align: center;
+    text-align: right;
+    margin-right: 25px;
     text-decoration: none;
     color: red;
+    border: solid 3px red;
+    border-radius: 47.5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 35px;
+    padding-left: 35px;
     font-size: 20px;
+    float: right;
+}
+.envoyercss{
+
+text-align: center;
+
 }

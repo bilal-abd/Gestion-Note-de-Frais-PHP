@@ -1,7 +1,5 @@
 <?php
 session_start();
-$nom = 'Younes';
-$psw = 'younes';
 ?>
 <?php
 $data = [
@@ -67,19 +65,9 @@ $password = '';
         <div style="width: 48.4%" id="connexion_user">
             <center>
                 <form name="connexion" method="post" action="user_page.php">
-                    <div class="user">Connexion visiteur</div>
+                    <div class="user">Connexion Admin</div>
                     <div class="identifiant_user">Identifiant : </div><input type="text" class="identifiant_user" name="nom_user" placeholder="Saisir votre identifiant"><br><br>
                     <div class="mdp_user">Mot de passe : </div><input type="password" class="mdp_user" name="mdp_user" placeholder="Saisir votre mot de passe"><br>
-                    <input type="submit" name="send" value="Connexion" class="btn_connexion">
-                </form>
-            </center>
-        </div>
-        <div style="width: 48.4%" id="connexion_user">
-            <center>
-                <form name="connexion" method="post" action="admin_page.php">
-                    <div class="admin">Connexion comptable</div>
-                    <div class="identifiant_admin">Identifiant : </div><input type="text" class="identifiant_admin" name="nom_admin" placeholder="Saisir votre identifiant"><br><br>
-                    <div class="mdp_admin">Mot de passe : </div><input type="password" class="mdp_admin" name="mdp_admin" placeholder="Saisir votre mot de passe"><br>
                     <input type="submit" name="send" value="Connexion" class="btn_connexion">
                 </form>
             </center>
